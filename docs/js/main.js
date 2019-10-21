@@ -4,7 +4,7 @@
 
 //判断手机类型
 window.onload = function () {
-    //alert($(window).height());
+    alert($(window).height());
     var u = navigator.userAgent;
     if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {//安卓手机
     } else if (u.indexOf('iPhone') > -1) {//苹果手机
@@ -73,6 +73,7 @@ function loading() {
     var numbers = 0;
     var length = loading_img_url.length;
 
+    alert('length:'+length);
     for (var i = 0; i < length; i++) {
         var img = new Image();
         img.src = loading_img_url[i];
