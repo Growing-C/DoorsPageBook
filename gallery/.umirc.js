@@ -39,4 +39,8 @@ export default {
       },
     ],
   ],
+  //下面的配置是打包相关的配置 不配置打包出来有问题
+  history: 'hash',
+  base: './',
+  publicPath: './',
 };
