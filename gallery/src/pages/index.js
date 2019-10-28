@@ -1,11 +1,20 @@
 import styles from './index.css';
-import imageurl from "../assets/yay.jpg";
+import { Button } from 'antd';
+import router from 'umi/router';
+// import imageurl from "../assets/yay.jpg";
 
 export default function() {
-  console.log(imageurl)
+  
+  function handleProducts() { 
+    router.push('/products/products'); 
+  }
+
+  function handleCard() { 
+    router.push('/puzzlecards');
+  }
   return (
     <div className={styles.normal}>
-      <div className={styles.welcome} style={{background: 'url('+imageurl+') no-repeat center 0'}} />
+      <div className={styles.welcome} />
       <ul className={styles.list}>
         <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
         <li>
@@ -14,6 +23,12 @@ export default function() {
           </a>
         </li>
       </ul>
+      <div className={styles.list}>
+       <Button  type="primary" onClick={handleProducts}>Products</Button>
+      </div>
+      <div className={styles.list}> 
+       <Button  type="primary" onClick={handleCard}>Cards</Button>
+      </div>
     </div>
   );
 }

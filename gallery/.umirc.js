@@ -1,4 +1,5 @@
 // ref: https://umijs.org/config/
+// 这里的内容可以全部转移到config/config.js
 export default {
   treeShaking: true,
   routes: [
@@ -7,8 +8,12 @@ export default {
       component: '../layouts/index',
       routes: [
         {
-          path: '/products',
-          component: './products',
+          path: '/products/products',
+          component: './products/products',
+        },
+        {
+          path: '/puzzlecards',
+          component: './puzzlecards',
         },
         {
           path: '/',

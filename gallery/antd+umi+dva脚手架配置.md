@@ -61,6 +61,12 @@ umi ui
   然后控制台输入 npm run start 之类的就等效于 umi dev
 
 
+## 命令添加page
+通过命令创建 /products 路由，
+
+$ umi g page products
+
+
 ## umi中访问静态资源
 
 https://www.jianshu.com/p/c98480042c59
